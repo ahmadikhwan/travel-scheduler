@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google Maps API</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="api.css">
+<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="api.js"></script>
+</head>
+<body>
+<!-- <div id="panel">
+    <input onclick="clearMarkers();" type=button value="Hide Markers">
+    <input onclick="showMarkers();" type=button value="Show All Markers">
+    <input onclick="deleteMarkers();" type=button value="Delete Markers">
+</div> -->
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div class="row">
+<div class="col-md-8">
+	<div id="map-canvas"></div>
+</div>
+<div class="col-md-4">
+<div id="control_panel" class="panel-waypoint" style="text-align:left">
+    <div style="margin:20px;border-width:2px;" class="panel-waypoint">
+    <!-- <b>Start:</b>
+    <select id="start">
+      <option value="Halifax, NS">Halifax, NS</option>
+      <option value="Boston, MA">Boston, MA</option>
+      <option value="New York, NY">New York, NY</option>
+      <option value="Miami, FL">Miami, FL</option>
+    </select>
+    <br>
+    <b>Waypoints:</b> <br>
+    <i>(Ctrl-Click for multiple selection)</i> <br>
+    <select multiple id="waypoints">
+      <option value="montreal, quebec">Montreal, QBC</option>
+      <option value="toronto, ont">Toronto, ONT</option>
+      <option value="chicago, il">Chicago</option>
+      <option value="winnipeg, mb">Winnipeg</option>
+      <option value="fargo, nd">Fargo</option>
+      <option value="calgary, ab">Calgary</option>
+      <option value="spokane, wa">Spokane</option>
+    </select>
+    <br>
+    <b>End:</b>
+    <select id="end">
+      <option value="Vancouver, BC">Vancouver, BC</option>
+      <option value="Seattle, WA">Seattle, WA</option>
+      <option value="San Francisco, CA">San Francisco, CA</option>
+      <option value="Los Angeles, CA">Los Angeles, CA</option>
+    </select>
+    <br> -->
+    End date<input type="date" id="input_date">
+    <input type="submit" onclick="calcRoute();">
+    </div>
+    <div id="directions_panel" class="panel-waypoint" style="margin:20px;background-color:#FFEE77;"></div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
